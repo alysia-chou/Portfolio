@@ -74,5 +74,46 @@ Key components:
 ```bash
 make
 ```
-#### Run Backend Tests
-```java
+#### Web Usage
+
+* Deploy index.cgi and template.html on a CGI-enabled server
+* Ensure the Java backend is compiled and accessible
+* Open the web page and submit start/end locations
+### Testing
+
+* BackendTests.java validates:
+  * Graph construction
+  * Path correctness
+  * Edge cases (no path, same start/end)
+
+* FrontendTests.java verifies:
+  * Input handling
+  * Output formatting
+  * Integration with backend responses
+
+### Design Highlights
+
+* Separation of concerns through interfaces (ADT-first design)
+
+* Custom data structures instead of built-in collections
+
+* Algorithm-focused implementation suitable for scaling
+
+* Emphasis on readability and maintainability
+
+### Future Improvements
+
+* Add interactive map visualization
+* Support multiple routing algorithms (A*, BFS)
+* Improve UI/UX with modern frontend frameworks
+* Cache frequently requested paths
+* Add accessibility enhancements
+
+### Acknowledgements
+
+Developed as part of a data structures and algorithms coursework project, with a focus on real-world applicability of graph algorithms.
+
+
+
+
+
